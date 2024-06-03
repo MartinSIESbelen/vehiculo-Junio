@@ -12,7 +12,14 @@ public class Main {
         int stockActual;
         
         miVehiculoXXX2223 = new VehiculoXXX2223("Seat",18000,100);
-        try 
+        stockActual = operativaVehiculoXXX2223(miVehiculoXXX2223, null); 
+        System.out.println("El stock actual es "+ stockActual );
+    }
+
+    public static int operativaVehiculoXXX2223(VehiculoXXX2223 miVehiculoXXX2223, int cantidad) {
+        int stockActual;
+        
+        try
         {
             System.out.println("Venta de Vehiculos");
             miVehiculoXXX2223.vender(20);
@@ -20,7 +27,6 @@ public class Main {
         {
             System.out.print("Fallo al vender");
         }
-        
         try
         {
             System.out.println("Compra de Vehiculos");
@@ -30,7 +36,7 @@ public class Main {
             System.out.print("Fallo al comprar");
         }
         stockActual = miVehiculoXXX2223.obtenerStock();
-        System.out.println("El stock actual es "+ stockActual );
+        return stockActual;
     }
 
 }
