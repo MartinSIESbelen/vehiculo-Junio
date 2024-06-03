@@ -12,7 +12,7 @@ public class Main {
         int stockActual;
         
         miVehiculoXXX2223 = new VehiculoXXX2223("Seat",18000,100);
-        stockActual = operativaVehiculoXXX2223(miVehiculoXXX2223, null); 
+        stockActual = operativaVehiculoXXX2223(miVehiculoXXX2223, 50); 
         System.out.println("El stock actual es "+ stockActual );
     }
 
